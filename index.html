@@ -263,7 +263,7 @@
     .trust-icon { display: grid; width: 42px; height: 42px; flex: 0 0 auto; place-items: center; border-radius: 13px; background: var(--color-primary-light); color: var(--color-primary); }
     .trust-icon svg { width: 21px; height: 21px; }
     .trust-item strong { display: block; color: var(--color-heading); font-family: "Manrope", sans-serif; font-size: 13px; }
-    .trust-item span { display: block; color: var(--color-text-muted); font-size: 11px; }
+    .trust-item span:not(.trust-icon) { display: block; color: var(--color-text-muted); font-size: 11px; }
 
     /* Intro */
     .intro-grid { display: grid; grid-template-columns: .9fr 1.1fr; align-items: center; gap: 76px; }
@@ -419,7 +419,7 @@
       .trust-grid { grid-template-columns: 1fr 1fr; gap: 18px 10px; }
       .trust-item { justify-content: flex-start; }
       .trust-item strong { font-size: 12px; }
-      .trust-item span { font-size: 10px; }
+      .trust-item span:not(.trust-icon) { font-size: 10px; }
       .intro-grid, .process-layout, .faq-layout { grid-template-columns: 1fr; gap: 38px; }
       .intro-image img { height: 330px; }
       .image-caption { right: 10px; bottom: 12px; }
